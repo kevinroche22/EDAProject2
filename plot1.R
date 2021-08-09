@@ -16,10 +16,15 @@ colours <- c("red", "yellow", "blue", "green") # set colours for barplot
 with(totalEmissions, 
      barplot(height=Emissions/1000, names.arg = year, col = colours, 
              xlab = "Year", ylab = "Annual Emissions",
-             main = expression('Annual Emission PM'[2.5]*' from 1999 to 2008')))
+             main = expression('PM'[2.5]*' Emissions in the US from 1999 to 2008')))
 
 # dev.off()
 
+##########
+# Answer #
+##########
 
+# We see that total emissions in the US have 
+# indeed decreased from 1999 to 2008.
 
 
