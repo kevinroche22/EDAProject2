@@ -20,7 +20,6 @@ totalEmissionsBaltimore <- NEI %>%
         filter(fips == "24510") %>% # filter on baltimore's fips code
         group_by(year, type) %>% # group by year AND type
         summarise(Emissions = sum(Emissions)) # sum of annual emissions by year and type
-colours <- c("red", "yellow", "blue", "green") # set colours for barplot
 
 totalEmissionsBaltimore %>% ggplot(aes(x = factor(year), y = Emissions, fill = type)) +
         geom_bar(stat = "identity") + 
