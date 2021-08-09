@@ -1,7 +1,3 @@
-## Load packages
-library(tidyverse)
-library(ggplot2)
-
 ## Load Data
 NEI <- readRDS("exdata_data_NEI_data/summarySCC_PM25.rds")
 SCC <- readRDS("exdata_data_NEI_data/Source_Classification_Code.rds")
